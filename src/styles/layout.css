@@ -1,15 +1,22 @@
-#app{
+/* ==========================================================================
+   GLOBAL LAYOUT
+   ========================================================================== */
+
+#app {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 var(--spacing-xl);
 }
 
-
-section{
+section {
     padding: var(--spacing-xl);
 }
 
-.hero{
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+
+.hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -18,45 +25,48 @@ section{
     padding: var(--spacing-lg);
 }
 
-.hero__left{
+.hero__left {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-lg);
 }
 
-.hero__contact{
+.hero__contact {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-sm);
-    font-size: var(--font-size-lg)
+    font-size: var(--font-size-lg);
 }
 
-.hero__contact-cursor{
+.hero__contact-cursor {
     cursor: pointer;
 }
 
-.hero__right{
+.hero__right {
     display: flex;
     align-items: center;
     padding: var(--spacing-md);
     background-color: var(--color-primary);
     border-radius: 50%;
-    border: 5px solid  var(--color-border) ;
+    border: 5px solid var(--color-border);
     transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-.hero__right:hover{
+.hero__right:hover {
     border-color: var(--color-primary);
     transform: translateY(-2px);
 }
 
-.hero__right  img{
+.hero__right img {
     height: 400px;
     width: 400px;
     border-radius: 50%;
     object-fit: cover;
-
 }
+
+/* ==========================================================================
+   ABOUT SECTION
+   ========================================================================== */
 
 .about {
     display: flex;
@@ -70,16 +80,35 @@ section{
     gap: var(--spacing-md);
 }
 
-.project{
+/* ==========================================================================
+   PROJECTS SECTION
+   ========================================================================== */
+
+.project {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
 }
 
-.project__container{
+.project__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xs);
+}
+
+/* --- Project Card --- */
+
+.project-card {
+    background-color: var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    border: 5px solid var(--color-border);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
 }
 
 .project-card__img {
@@ -94,31 +123,20 @@ section{
     object-fit: cover;
 }
 
-.project-card{
-    background-color: var(--color-bg-secondary);
-    border-radius: var(--border-radius);
-    padding: var(--spacing-md);
-    border: 5px solid var(--color-border)  ;
-    transition: border-color 0.2s ease, transform 0.2s ease;
-}
-
-.project-card:hover{
-    border-color: var(--color-primary);
-    transform: translateY(-2px);
-}
-
-.project-card__techs{
+.project-card__techs {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-xs);
     margin: var(--spacing-sm) 0;
 }
 
-.project-card__techs tech-badge{
+.project-card__techs tech-badge {
     display: inline-flex;
 }
 
-.tech-badge{
+/* --- Tech Badge (Atom) --- */
+
+.tech-badge {
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-xs);
@@ -130,35 +148,34 @@ section{
     color: var(--color-text);
 }
 
-.tech-badge i{
+.tech-badge i {
     font-size: var(--font-size-sm);
     color: var(--color-primary);
 }
 
-.project-card img{
-    height: 200px;
-    width: 100%;
-}
+/* ==========================================================================
+   TECHNOLOGIES SECTION
+   ========================================================================== */
 
-.tech{
-    display: flex;
-    flex-direction: column;
-    gap:var(--spacing-md);
-}
-
-.tech__container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-lg);
-}
-
-.tech-category{
+.tech {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
 }
 
-.tech-category__header{
+.tech__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.tech-category {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.tech-category__header {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
@@ -168,24 +185,26 @@ section{
     border: 2px solid var(--color-border);
 }
 
-.tech-category__icon{
+.tech-category__icon {
     font-size: var(--font-size-lg);
 }
 
-.tech-category__title{
+.tech-category__title {
     font-size: var(--font-size-md);
     font-weight: 600;
     color: var(--color-text);
     margin: 0;
 }
 
-.tech-category__grid{
+.tech-category__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--spacing-sm);
 }
 
-.tech-card{
+/* --- Tech Card --- */
+
+.tech-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -199,26 +218,26 @@ section{
     width: 100%;
 }
 
-.tech-card:hover{
+.tech-card:hover {
     border-color: var(--color-primary);
     transform: translateY(-2px);
 }
 
-.tech-card__top{
+.tech-card__top {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
     width: 100%;
 }
 
-.tech-card__icon{
+.tech-card__icon {
     font-size: var(--font-size-lg);
     flex-shrink: 0;
     width: 28px;
     text-align: center;
 }
 
-.tech-card__name{
+.tech-card__name {
     font-size: var(--font-size-sm);
     font-weight: 500;
     color: var(--color-text);
@@ -226,34 +245,39 @@ section{
     flex: 1;
 }
 
-.tech-card__level{
+.tech-card__level {
     font-size: var(--font-size-xs);
     font-weight: 600;
     padding: 0.125rem 0.5rem;
     border-radius: 999px;
     background-color: var(--color-bg);
-    border: 1px solid var(--color-border);
-    color: var(--color-text);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
     text-transform: capitalize;
     white-space: nowrap;
     align-self: flex-start;
+    opacity: 0.7;
 }
 
-.tech-card__level{ border-color: var(--color-primary); color: var(--color-primary); opacity: 0.7;}
+/* ==========================================================================
+   TITLES SECTION
+   ========================================================================== */
 
-.title{
+.title {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
 }
 
-.title-section__container{
+.title-section__container {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
 }
 
-.title-card{
+/* --- Title Card --- */
+
+.title-card {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
@@ -264,32 +288,32 @@ section{
     transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-.title-card:hover{
+.title-card:hover {
     border-color: var(--color-primary);
     transform: translateY(-2px);
 }
 
-.title-card__main{
+.title-card__main {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xs);
 }
 
-.title-card__name{
+.title-card__name {
     font-size: var(--font-size-md);
     font-weight: 600;
     color: var(--color-text);
     margin: 0;
 }
 
-.title-card__institution{
+.title-card__institution {
     font-size: var(--font-size-sm);
     color: var(--color-text);
     opacity: 0.8;
     margin: 0;
 }
 
-.title-card__status{
+.title-card__status {
     align-self: flex-start;
     font-size: var(--font-size-xs);
     font-weight: 600;
@@ -298,69 +322,90 @@ section{
     text-transform: capitalize;
 }
 
-.title-card__status--completed{
+.title-card__status--completed {
     background-color: rgba(0, 143, 104, 0.15);
     border: 1px solid var(--color-primary);
     color: var(--color-primary);
 }
 
-.title-card__status--in-progress{
+.title-card__status--in-progress {
     background-color: var(--color-bg);
     border: 1px solid var(--color-border);
     color: var(--color-text);
     opacity: 0.7;
 }
 
-@media (max-width: 1200px){
-    .tech__container{
-        grid-template-columns: repeat(2, 1fr);
+/* ==========================================================================
+   MEDIA QUERIES (RESPONSIVE DESIGN)
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+    #app {
+        padding: 0 var(--spacing-lg);
     }
-    .project__container{
+    .hero__right img {
+        height: 320px;
+        width: 320px;
+    }
+    .tech__container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 768px){
-    .tech__container{
-        grid-template-columns: 1fr;
+@media (max-width: 768px) {
+    #app {
+        padding: 0 var(--spacing-sm);
     }
-    .hero{
+    section {
+        padding: var(--spacing-lg) 0;
+    }
+    .hero {
         grid-template-columns: 1fr;
         text-align: center;
         min-height: auto;
-        padding: var(--spacing-xl) var(--spacing-lg);
+        padding: var(--spacing-xl) 0;
+        gap: var(--spacing-lg);
     }
-    .hero__right{
+    .hero__right {
+        order: -1;
         margin: 0 auto;
+        width: fit-content;
     }
-    .hero__contact{
+    .hero__right img {
+        height: 300px;
+        width: 300px;
+    }
+    .hero__contact {
         justify-content: center;
     }
-    .project__container{
+    .project__container {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
     }
-    #app{
-        padding: 0 var(--spacing-md);
-    }
-    section{
-        padding: var(--spacing-lg);
+    .tech__container {
+        grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 480px){
-    :root{
-        --font-size-2xl: 2.5rem;
-        --font-size-xl: 1.5rem;
-        --font-size-lg: 1.25rem;
-        --spacing-xl: 2rem;
-        --spacing-lg: 1.5rem;
+@media (max-width: 480px) {
+    :root {
+        --font-size-2xl: 2.2rem;
+        --font-size-xl: 1.35rem;
+        --font-size-lg: 1.15rem;
+        --spacing-xl: 1.5rem;
+        --spacing-lg: 1rem;
     }
-    .hero__right img{
-        height: 280px;
-        width: 280px;
+    .hero__right img {
+        height: 240px;
+        width: 240px;
     }
-    .project-card img{
-        height: 160px;
+    .project-card img {
+        height: 150px;
+    }
+    .project-card {
+        padding: var(--spacing-sm);
+    }
+    .tech-category__header {
+        padding: var(--spacing-xs) var(--spacing-sm);
     }
 }

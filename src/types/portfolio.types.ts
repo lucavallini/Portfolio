@@ -1,33 +1,31 @@
-export type TechLevel = "basic" | "intermediate" |"intermediate/advanced"| "advanced";
+export type TechLevel = "basic" | "intermediate" | "intermediate/advanced" | "advanced";
 export type TechCategory = "Frontend" | "Backend" | "Database";
 export type TitleState = "in progress" | "completed";
 
-
-export interface Contact{
-    icon:string;
+export interface Contact {
+    icon: string;
     url: string;
 }
 
-export interface Hero{
+export interface Hero {
     name: string;
     lastName: string;
-    info:string[];
+    info: string[];
     contact: Contact[];
     img: string;
 }
 
-export interface About{
-    description:string[];
+export interface About {
+    description: string[];
 }
 
 export interface ProjectTechnology {
     name: string;
     category: TechCategory;
-    icon : string;
+    icon: string;
 }
 
-
-export interface Project{
+export interface Project {
     name: string;
     description: string;
     technologies: ProjectTechnology[];
@@ -35,21 +33,20 @@ export interface Project{
     img: string;
 }
 
-export interface Technology{
-    name:string;
+export interface Technology {
+    name: string;
     level: TechLevel;
     category: TechCategory;
-    icon : string;
+    icon: string;
 }
 
-export interface Title{
-    name:string;
-    institution:string;
-    status:TitleState;
+export interface Title {
+    name: string;
+    institution: string;
+    status: TitleState;
 }
 
-
-export interface PortfolioData{
+export interface PortfolioData {
     hero: Hero;
     about: About;
     projects: Project[];

@@ -1,7 +1,7 @@
 export class TechBadge extends HTMLElement {
     connectedCallback() {
-        const name = this.getAttribute('name') ?? '';
-        const icon = this.getAttribute('icon') ?? '';
+        const name = this.getAttribute("name") ?? "";
+        const icon = this.getAttribute("icon") ?? "";
 
         this.innerHTML = `
         <div class="tech-badge">
@@ -12,4 +12,4 @@ export class TechBadge extends HTMLElement {
     }
 }
 
-customElements.define('tech-badge', TechBadge);
+customElements.define("tech-badge", TechBadge);

@@ -1,9 +1,9 @@
-export class TitleCard extends HTMLElement{
-    connectedCallback(){
-        const name = this.getAttribute('name') ?? '';
-        const institution = this.getAttribute('institution') ?? '';
-        const status = this.getAttribute('status') ?? '';
-        const statusClass = status === 'completed' ? 'title-card__status--completed' : 'title-card__status--in-progress';
+export class TitleCard extends HTMLElement {
+    connectedCallback() {
+        const name = this.getAttribute("name") ?? "";
+        const institution = this.getAttribute("institution") ?? "";
+        const status = this.getAttribute("status") ?? "";
+        const statusClass = status === "completed" ? "title-card__status--completed" : "title-card__status--in-progress";
 
         this.innerHTML = `
         <div class="title-card">
@@ -17,4 +17,4 @@ export class TitleCard extends HTMLElement{
     }
 }
 
-customElements.define('title-card', TitleCard);
+customElements.define("title-card", TitleCard);

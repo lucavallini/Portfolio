@@ -8,16 +8,16 @@
 
 ## 🚀 Stack tecnológico
 
-| Tecnología | Uso |
-|---|---|
-| **TypeScript** | Lógica de componentes y tipado estático |
-| **Web Components** | Componentes nativos sin frameworks |
-| **HTML5** | Estructura semántica |
-| **CSS3** | Estilos personalizados con custom properties |
-| **Vite** | Build tool y servidor de desarrollo |
-| **Devicons** | Íconos de tecnologías |
-| **Font Awesome** | Íconos de contacto |
-| **Google Fonts** | Tipografías (Rock Salt + Inter) |
+| Tecnología         | Uso                                          |
+| ------------------ | -------------------------------------------- |
+| **TypeScript**     | Lógica de componentes y tipado estático      |
+| **Web Components** | Componentes nativos sin frameworks           |
+| **HTML5**          | Estructura semántica                         |
+| **CSS3**           | Estilos personalizados con custom properties |
+| **Vite**           | Build tool y servidor de desarrollo          |
+| **Devicons**       | Íconos de tecnologías                        |
+| **Font Awesome**   | Íconos de contacto                           |
+| **Google Fonts**   | Tipografías (Rock Salt + Inter)              |
 
 ---
 
@@ -77,12 +77,14 @@ data.json → data.service.ts → main.ts → secciones → átomos
 Los componentes se dividen en dos niveles:
 
 **Átomos** — piezas pequeñas y reutilizables:
+
 - `contact-link` → ícono de contacto con comportamiento (abrir link o copiar mail)
 - `tech-badge` → tecnología con ícono y nivel
 - `project-card` → card de proyecto con imagen, descripción, tecnologías y repo
 - `title-card` → título académico o certificación
 
 **Secciones** — contenedores que consumen átomos:
+
 - `hero-section`, `about-section`, `project-section`, `tech-section`, `title-section`
 
 ---
@@ -104,9 +106,13 @@ Toda la información personal se centraliza en `public/data.json`. Para agregar 
 ### Tipos disponibles
 
 ```typescript
-type TechLevel    = "basic" | "intermediate" | "intermediate/advanced" | "advanced"
-type TechCategory = "frontend" | "backend" | "tools" | "database"
-type TitleState   = "in progress" | "completed"
+type TechLevel =
+  | "basic"
+  | "intermediate"
+  | "intermediate/advanced"
+  | "advanced";
+type TechCategory = "frontend" | "backend" | "database";
+type TitleState = "in progress" | "completed";
 ```
 
 ---
@@ -152,8 +158,8 @@ El proyecto usa **CSS custom properties** para un sistema de diseño consistente
   --color-text: #e0e0e0;
 
   /* Tipografía */
-  --font-family: 'Inter', sans-serif;
-  --font-family-display: 'Rock Salt', cursive;
+  --font-family: "Inter", sans-serif;
+  --font-family-display: "Rock Salt", cursive;
 
   /* Espaciado (sistema de 8px) */
   --spacing-xs: 0.5rem;
@@ -163,6 +169,17 @@ El proyecto usa **CSS custom properties** para un sistema de diseño consistente
   --spacing-xl: 4rem;
 }
 ```
+
+---
+
+## 📱 Responsive
+
+| Breakpoint | Comportamiento                                    |
+| ---------- | ------------------------------------------------- |
+| `> 1200px` | Layout completo, 3 columnas en tecnologías        |
+| `≤ 1200px` | Tecnologías en 2 columnas                         |
+| `≤ 768px`  | Hero en una columna, proyectos en una columna     |
+| `≤ 480px`  | Font sizes reducidos, imagen del hero más pequeña |
 
 ---
 

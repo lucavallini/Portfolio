@@ -1,15 +1,15 @@
 export class ProjectCard extends HTMLElement {
     connectedCallback() {
-        const name = this.getAttribute('name') ?? '';
-        const description = this.getAttribute('description') ?? '';
-        const repo = this.getAttribute('repo') ?? '';
-        const img = this.getAttribute('img') ?? '';
+        const name = this.getAttribute("name") ?? "";
+        const description = this.getAttribute("description") ?? "";
+        const repo = this.getAttribute("repo") ?? "";
+        const img = this.getAttribute("img") ?? "";
 
         this.innerHTML = `
         <div class="project-card">
             <h3>${name}</h3>
-            <div class='project-card__img'>
-                <img src="${img}" class="project-card__img">
+            <div class="project-card__img">
+                <img src="${img}">
             </div>
             <p class="project-card__description">${description}</p>
             <div class="project-card__techs"></div>
@@ -17,6 +17,6 @@ export class ProjectCard extends HTMLElement {
         </div>
         `;
     }
-    }
+}
 
-customElements.define('project-card', ProjectCard);
+customElements.define("project-card", ProjectCard);
