@@ -43,6 +43,7 @@ body{
     color: var(--color-text);
     font-family: var(--font-family);
     line-height: var(--line-height-base);
+    font-size: var(--font-size-base);
 }
 
 h1{
@@ -55,6 +56,9 @@ h1{
 h2{
     font-size: var(--font-size-xl);
     line-height: var(--line-height-tight);
+    padding: var(--font-size-xs);
+    border-bottom: 3px solid var(--color-primary);
+    border-left: 3px solid var(--color-primary);
 }
 
 h3{

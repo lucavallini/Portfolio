@@ -27,7 +27,8 @@ section{
 .hero__contact{
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-sm)
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-lg)
 }
 
 .hero__contact-cursor{
