@@ -1,8 +1,8 @@
 # 🗂️ Portfolio Personal — Luca Vallini
 
 <div align="center">
-  <img src="/public/assets/img/portfolio-web.png" width="600" alt="Desktop">
-  <img src="/public/assets/img/portfolio-mobile.png" width="150" alt="Mobile">
+  <img src="/public/assets/img/portfolio-web.png" height="300" alt="Desktop">
+  <img src="/public/assets/img/portfolio-mobile.png" height="300" alt="Mobile">
 </div>
 
 > Portfolio personal desarrollado con HTML, CSS, TypeScript y Web Components nativos. Diseñado para ser escalable: toda la información personal se gestiona desde un único archivo `data.json`.
