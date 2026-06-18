@@ -1,6 +1,7 @@
 # 🗂️ Portfolio Personal — Luca Vallini
 
-![Hero section del portfolio](/public/assets/img/portfolio.png)
+![Hero section del portfolio](/public/assets/img/portfolio-web.png) ![Hero section del portfolio](/public/assets/img/portfolio-mobile.png)
+
 
 > Portfolio personal desarrollado con HTML, CSS, TypeScript y Web Components nativos. Diseñado para ser escalable: toda la información personal se gestiona desde un único archivo `data.json`.
 
