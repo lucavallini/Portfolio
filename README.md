@@ -105,7 +105,7 @@ Toda la información personal se centraliza en `public/data.json`. Para agregar 
 
 ```typescript
 type TechLevel    = "basic" | "intermediate" | "intermediate/advanced" | "advanced"
-type TechCategory = "frontend" | "backend" | "tools" | "database"
+type TechCategory = "frontend" | "backend" | "database"
 type TitleState   = "in progress" | "completed"
 ```
 
