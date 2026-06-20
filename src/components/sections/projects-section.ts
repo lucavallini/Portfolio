@@ -5,7 +5,7 @@ import "../atoms/tech-badge";
 export class ProjectSection extends HTMLElement {
     setData(projects: Project[]) {
         this.innerHTML = `
-        <section class="project">
+        <section id="projects" class="project">
             <div class="project__title">
                 <h2>Projects</h2>
             </div>

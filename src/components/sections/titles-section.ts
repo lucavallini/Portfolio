@@ -4,7 +4,7 @@ import "../atoms/title-card";
 export class TitleSection extends HTMLElement {
     setData(titles: Title[]) {
         this.innerHTML = `
-        <section class="title">
+        <section id="titles" class="title">
             <div class="title-section__title">
                 <h2>Titles</h2>
             </div>

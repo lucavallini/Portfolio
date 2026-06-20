@@ -41,10 +41,12 @@ portfolio/
 │   │   │   └── title-card.ts
 │   │   └── sections/         # Secciones de la página
 │   │       ├── about-section.ts
+│   │       ├── footer-section.ts
 │   │       ├── hero-section.ts
-│   │       ├── project-section.ts
+│   │       ├── nav-bar.ts
+│   │       ├── projects-section.ts
 │   │       ├── tech-section.ts
-│   │       └── title-section.ts
+│   │       └── titles-section.ts
 │   ├── services/
 │   │   └── data.service.ts   # Carga y tipado del JSON
 │   ├── styles/
@@ -109,9 +111,13 @@ Toda la información personal se centraliza en `public/data.json`. Para agregar 
 ### Tipos disponibles
 
 ```typescript
-type TechLevel    = "basic" | "intermediate" | "intermediate/advanced" | "advanced"
-type TechCategory = "frontend" | "backend" | "tools" | "database"
-type TitleState   = "in progress" | "completed"
+type TechLevel =
+  | "basic"
+  | "intermediate"
+  | "intermediate/advanced"
+  | "advanced";
+type TechCategory = "frontend" | "backend" | "tools" | "database";
+type TitleState = "in progress" | "completed";
 ```
 
 ---

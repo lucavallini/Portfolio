@@ -4,7 +4,7 @@ import type { Hero } from "../../types/portfolio.types";
 export class HeroSection extends HTMLElement {
     setData(hero: Hero) {
         this.innerHTML = `
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="hero__left">
                 <div class="hero__name">
                     <h1>${hero.name} ${hero.lastName}</h1>

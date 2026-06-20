@@ -1,9 +1,11 @@
 import { getPortfolioData } from "./services/data.service";
+import { NavBar } from "./components/sections/nav-bar";
 import { HeroSection } from "./components/sections/hero-section";
 import { AboutSection } from "./components/sections/about-section";
-import { ProjectSection } from "./components/sections/project-section";
+import { ProjectSection } from "./components/sections/projects-section";
 import { TechSection } from "./components/sections/tech-section";
-import { TitleSection } from "./components/sections/title-section";
+import { TitleSection } from "./components/sections/titles-section";
+import { FooterSection } from "./components/sections/footer-section";
 import "./styles/base.css";
 import "./styles/layout.css";
 
@@ -23,3 +25,6 @@ techEl.setData(data.technologies);
 
 const titleEl = document.querySelector("title-section") as TitleSection;
 titleEl.setData(data.titles);
+
+const footerEl = document.querySelector("footer-section") as FooterSection;
+footerEl.setData(data.hero.contact);

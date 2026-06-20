@@ -3,7 +3,7 @@ import type { Technology } from "../../types/portfolio.types";
 export class TechSection extends HTMLElement {
     setData(technologies: Technology[]) {
         this.innerHTML = `
-        <section class="tech">
+        <section id="tech" class="tech">
             <div class="tech__title">
                 <h2>Technologies</h2>
             </div>

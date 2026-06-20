@@ -54,12 +54,20 @@
     padding: 0;
 }
 
+body.light-mode {
+    --color-bg: #f5f5f5;
+    --color-bg-secondary: #e0e0e0;
+    --color-text: #212121;
+    --color-border: #cccccc;
+}
+
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: var(--font-family);
     line-height: var(--line-height-base);
     font-size: var(--font-size-base);
+    padding-top: 70px;
 }
 
 h1 {

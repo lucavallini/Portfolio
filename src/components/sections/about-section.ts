@@ -3,7 +3,7 @@ import type { About } from "../../types/portfolio.types";
 export class AboutSection extends HTMLElement {
     setData(about: About) {
         this.innerHTML = `
-        <section class="about">
+        <section id="about" class="about">
             <div class="about__title">
                 <h2>About</h2>
             </div>
