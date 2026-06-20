@@ -21,11 +21,13 @@ export class NavBar extends HTMLElement {
         </nav>
         `;
     
-        const btn = this.querySelector("#theme-button");
-        btn.addEventListener("click", () => {
-            document.body.classList.toggle("light-mode");
-            btn.textContent = document.body.classList.contains("light-mode") ? '☀️' : '🌙';
-        })
+        const btn = this.querySelector('#theme-button');
+        if (btn) {
+        btn.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            btn.textContent = document.body.classList.contains('light-mode') ? '☀️' : '🌙';
+        });
+        }
     }
 }
 

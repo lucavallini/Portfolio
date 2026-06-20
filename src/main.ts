@@ -1,5 +1,4 @@
 import { getPortfolioData } from "./services/data.service";
-import { NavBar } from "./components/sections/nav-bar";
 import { HeroSection } from "./components/sections/hero-section";
 import { AboutSection } from "./components/sections/about-section";
 import { ProjectSection } from "./components/sections/projects-section";
@@ -8,6 +7,7 @@ import { TitleSection } from "./components/sections/titles-section";
 import { FooterSection } from "./components/sections/footer-section";
 import "./styles/base.css";
 import "./styles/layout.css";
+import "./components/sections/nav-bar";
 
 const data = await getPortfolioData();
 
