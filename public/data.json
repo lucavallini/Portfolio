@@ -31,7 +31,7 @@
         { "name": "PyQt5", "category": "Frontend", "icon": "devicon-qt-plain" }
       ],
       "repo": "https://github.com/lucavallini/wert-app",
-      "img": "/assets/img/wert.png"
+      "img": "/assets/img/wert.webp"
     },
     {
       "name": "Portfolio",
@@ -42,7 +42,7 @@
         {"name":"TypeScript" ,"category":"Frontend", "icon":"devicon-typescript-plain"}
       ],
       "repo":"https://github.com/lucavallini/portfolio",
-      "img":"/assets/img/portfolio.png"
+      "img":"/assets/img/portfolio.webp"
     }
   ],
   "technologies": [
