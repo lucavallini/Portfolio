@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "name": "Luca",
+    "lastName": "Vallini",
+    "info": [
+      "Desarrollador de Santa Fe, Argentina 🇦🇷",
+      "Desarrollo web, API's y soluciones de software"
+    ],
+    "contact": [
+      { "icon": "fa-brands fa-github", "url": "https://github.com/lucavallini" },
+      { "icon": "fa-brands fa-linkedin", "url": "https://linkedin.com/in/luca-vallini" },
+      { "icon": "fa-regular fa-envelope", "url": "lucavallini1508@gmail.com" }
+    ],
+    "img":"/assets/img/PerfilLuca.png"
+  },
+  "about": {
+    "description": [
+      "Soy estudiante de la Tecnicatura Universitaria en Programación en la UTN FRVT de Venado Tuerto, Argentina.",
+      "He adquirido una sólida base en desarrollo de software a través de mi formación universitaria, incluyendo programación orientada a objetos, bases de datos, buenas prácticas de desarrollo y código limpio, complementándola con aprendizaje autodidacta y el desarrollo de proyectos personales.",
+      "Mi principal enfoque es el desarrollo de software con Python y el desarrollo web con HTML, CSS, JavaScript, TypeScript y Angular.",
+      "Además, cuento con experiencia trabajando con MySQL, Git e integración de APIs REST, aplicando estos conocimientos en proyectos que me permitieron desarrollar soluciones funcionales y escalables."
+    ]
+  },
+  "projects": [
+    {
+      "name": "Wert",
+      "description": "Aplicación de escritorio para conversión de divisas e indicadores económicos, con sistema de notas y registro de usuarios.",
+      "technologies": [
+        { "name": "Python", "icon":"devicon-python-plain"  },
+        { "name": "MySQL", "icon":"devicon-mysql-plain" },
+        { "name": "PyQt5", "icon": "devicon-qt-plain" }
+      ],
+      "repo": "https://github.com/lucavallini/wert-app",
+      "img": "/assets/img/wert.webp"
+    },
+    {
+      "name": "Portfolio",
+      "description":"Página web como portfolio personal de Luca Vallini, utilizando diseño propio y webcomponents.",
+      "technologies":[
+        {"name":"HTML", "icon":"devicon-html5-plain"},
+        {"name":"CSS", "icon":"devicon-css3-plain"},
+        {"name":"Angular" ,"icon":"devicon-angularjs-plain"}
+      ],
+      "repo":"https://github.com/lucavallini/portfolio",
+      "img":"/assets/img/portfolio.webp"
+    }
+  ],
+  "technologies": [
+    { "name": "Python", "icon":"devicon-python-plain"},
+    {"name": "PyQt5", "icon": "devicon-qt-plain"},
+    { "name": "HTML", "icon":"devicon-html5-plain" },
+    { "name": "CSS", "icon":"devicon-css3-plain" },
+    { "name": "JavaScript", "icon" :"devicon-javascript-plain"},
+    { "name": "TypeScript", "icon": "devicon-typescript-plain" },
+    { "name":"Angular", "icon":"devicon-angularjs-plain"},
+    { "name": "MySQL", "icon":"devicon-mysql-plain" }
+  ],
+  "titles": [
+    {
+      "name": "Tecnicatura Universitaria en Programación",
+      "institution": "UTN FRVT",
+      "status": "In progress"
+    },
+    {
+      "name": "Certificado B2 en Inglés",
+      "institution": "Cultura Inglesa",
+      "status": "Completed"
+    }
+  ]
+}

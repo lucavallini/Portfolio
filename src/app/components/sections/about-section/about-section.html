@@ -1,0 +1,10 @@
+<section id="about" class="about">
+    <div class="about__title">
+        <h2>About me</h2>
+    </div>
+    <div class="about__description">
+        @for (line of data.description; track line){
+            <p>{{line}}</p>
+        }
+    </div>
+</section>

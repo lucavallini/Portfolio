@@ -1,0 +1,10 @@
+<section id="titles" class="titles">
+    <div class="titles-section__title">
+        <h2>Titles</h2>
+    </div>
+    <div class="title-section__container">
+        @for(title of data;track title){
+            <app-title-card [data]="title"></app-title-card>
+        }
+    </div>
+</section>

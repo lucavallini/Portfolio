@@ -1,0 +1,52 @@
+.project-card {
+    background-color: var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    border: 5px solid var(--color-border);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.project-card__img {
+    height: 200px;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.project-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-card__content a {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.project-card__techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin: var(--spacing-sm) 0;
+}
+
+.project-card__techs tech-badge {
+    display: inline-flex;
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        padding: var(--spacing-sm);
+    }
+
+    .project-card__img {
+        height: 150px;
+    }
+}

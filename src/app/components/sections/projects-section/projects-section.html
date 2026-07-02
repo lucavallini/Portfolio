@@ -1,0 +1,10 @@
+<section id="projects" class="projects">
+    <div class="project__title">
+        <h2>Projects</h2>
+    </div>
+    <div class="project__container">
+        @for(line of data; track line){
+            <app-project-card [data]="line"></app-project-card>
+        }
+    </div>
+</section>

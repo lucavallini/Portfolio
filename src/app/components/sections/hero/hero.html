@@ -1,0 +1,23 @@
+<section id="hero" class="hero">
+    <div class="hero__left">
+        <div class="hero__name">
+            <h1>{{data.name}} {{data.lastName}}</h1>
+        </div>
+
+        <div class="hero__info">
+            @for (line of data.info; track line){
+                <p>{{line}}</p>
+            }
+        </div>
+
+        <div class="hero__contact">
+            @for (line of data.contact; track line){
+                <app-contact-link class="hero__contact-cursor" [data]="line"></app-contact-link>
+            }
+        </div>
+    </div>
+
+    <div class="hero__right">
+        <img alt="a" src="{{data.img}}">
+    </div>
+</section>

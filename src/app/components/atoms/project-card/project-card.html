@@ -1,0 +1,15 @@
+<div class="project-card">
+    <h3>{{data.name}}</h3>
+    <div class="project-card__img">
+        <img [src]="data.img" alt="proyectito">
+    </div>
+    <div class="project-card__content">
+        <p class="project-card__description">{{data.description}}</p>
+        <div class="project-card__techs">
+            @for (line of data.technologies; track line){
+                <app-tech-badge class="tech-badge" [data]="line"></app-tech-badge>
+            }
+        </div>
+        <a class="project-card__repo" [href]="data.repo">Ver repositorio</a>
+    </div>
+</div>

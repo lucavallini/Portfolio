@@ -1,0 +1,9 @@
+@if(data.url.includes ('@')){
+    <div class="contact-link" (click)="copyMail()">
+        <i [class]="data.icon"></i>
+    </div>
+}@else{
+    <div class="contact-link">
+        <a [href]="data.url"><i [class]="data.icon"></i></a>
+    </div>
+}

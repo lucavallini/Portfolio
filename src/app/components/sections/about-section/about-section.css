@@ -1,0 +1,11 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.about__description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}

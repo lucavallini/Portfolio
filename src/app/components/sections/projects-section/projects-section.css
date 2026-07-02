@@ -1,0 +1,18 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.project__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xs);
+}
+
+@media (max-width: 1024px) {
+    .project__container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+}

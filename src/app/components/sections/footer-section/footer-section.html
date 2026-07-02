@@ -1,0 +1,10 @@
+<section id="contact">
+    <footer class="footer-section">
+        <div class="footer__links">
+            @for (contact of data; track contact){
+                <app-contact-link class="footer__link" [data]="contact"></app-contact-link>
+            }
+        </div>
+        <p class="footer__copy">¡Gracias por interesarte!</p>
+    </footer>
+</section>

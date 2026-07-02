@@ -1,0 +1,9 @@
+@if(portfolioData !== null){
+  <app-navbar-section></app-navbar-section>
+  <app-hero [data]="portfolioData.hero"></app-hero>
+  <app-about-section [data]="portfolioData.about"></app-about-section>
+  <app-projects-section [data]="portfolioData.projects"></app-projects-section>
+  <app-skills-section [data]="portfolioData.technologies"></app-skills-section>
+  <app-titles-section [data]="portfolioData.titles"></app-titles-section>
+  <app-footer-section [data]="portfolioData.hero.contact"></app-footer-section>
+  }

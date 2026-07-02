@@ -1,0 +1,13 @@
+<nav class="nav-bar">
+    <div class="nav-bar__logo">
+        <a href="#hero">LV</a>
+    </div>
+    <div class="nav-bar__links">
+        @for(item of items; track item){
+            <a [href]="'#' + item.toLowerCase()">{{item}}</a>
+        }
+    </div>
+    <div class="nav-bar__button">
+        <button class="nav-bar__theme-button" (click)="toggleTheme()">{{themeIcon}}</button>
+    </div>
+</nav>
