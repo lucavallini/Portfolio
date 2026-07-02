@@ -1,5 +1,5 @@
 @if(portfolioData !== null){
-  <app-navbar-section></app-navbar-section>
+  <app-navbar-section (languageChange)="onLanguageChange($event)"></app-navbar-section>
   <app-hero [data]="portfolioData.hero"></app-hero>
   <app-about-section [data]="portfolioData.about"></app-about-section>
   <app-projects-section [data]="portfolioData.projects"></app-projects-section>

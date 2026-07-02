@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { DataService } from './data-service';
 import { PortfolioData } from './types/portfolio.types';
@@ -21,9 +21,16 @@ export class App implements OnInit {
   constructor(private dataService: DataService, private cdr: ChangeDetectorRef) {}
   portfolioData: PortfolioData | null=null;
   ngOnInit(){
-    this.dataService.getPortfolioData().subscribe(data=>{
+    this.dataService.getPortfolioData('es').subscribe(data=>{
       this.portfolioData = data
       this.cdr.detectChanges()
     })
+  }
+  onLanguageChange(lang:string){
+    this.dataService.getPortfolioData(lang).subscribe(data=>{
+      this.portfolioData = data;
+      this.cdr.detectChanges()
+    })
+
   }
 }
