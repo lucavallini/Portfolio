@@ -46,7 +46,7 @@
     },
     {
       "name": "AI-BAR Sistema de Gestión",
-      "descripcion": "Aplicación web para el manejo de empresa de logística de camiones, usando Angular para frontend y FastApi para el backend",
+      "description": "Aplicación web para el manejo de empresa de logística de camiones, usando Angular para frontend y FastApi para el backend",
       "technologies":[
         {"name":"Angular" ,"icon":"devicon-angularjs-plain"},
         {"name":"FastAPI", "icon": "devicon-fastapi-plain"}

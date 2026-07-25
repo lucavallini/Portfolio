@@ -46,7 +46,7 @@
     },
     {
       "name": "AI-BAR Sistema de Gestión",
-      "descripcion": "A web application for managing a lorry logistics company, using Angular for the front-end and FastAPI for the back-end",
+      "description": "A web application for managing a lorry logistics company, using Angular for the front-end and FastAPI for the back-end",
       "technologies":[
         {"name":"Angular" ,"icon":"devicon-angularjs-plain"},
         {"name":"FastAPI", "icon": "devicon-fastapi-plain"}
