@@ -43,6 +43,15 @@
       ],
       "repo":"https://github.com/lucavallini/portfolio",
       "img":"/assets/img/portfolio.webp"
+    },
+    {
+      "name": "AI-BAR Sistema de Gestión",
+      "descripcion": "A web application for managing a lorry logistics company, using Angular for the front-end and FastAPI for the back-end",
+      "technologies":[
+        {"name":"Angular" ,"icon":"devicon-angularjs-plain"},
+        {"name":"FastAPI", "icon": "devicon-fastapi-plain"}
+      ],
+      "img":"/assets/img/aibar.webp"
     }
   ],
   "technologies": [
