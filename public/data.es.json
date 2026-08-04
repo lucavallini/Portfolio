@@ -46,10 +46,12 @@
     },
     {
       "name": "AI-BAR Sistema de Gestión",
-      "description": "Aplicación web para el manejo de empresa de logística de camiones, usando Angular para frontend y FastApi para el backend",
+      "description": "Aplicación web fullstack para la gestión integral de una empresa de logística de transporte. Desarrollada con Angular en el frontend y FastAPI en el backend, con base de datos PostgreSQL gestionada a través de Supabase, autenticación JWT, control de acceso por roles y sistema de auditoría.",
       "technologies":[
         {"name":"Angular" ,"icon":"devicon-angularjs-plain"},
-        {"name":"FastAPI", "icon": "devicon-fastapi-plain"}
+        {"name":"FastAPI", "icon": "devicon-fastapi-plain"},
+        {"name":"Python", "icon":"devicon-python-plain"},
+        {"name":"Supabase", "icon":"devicon-supabase-plain"}
       ],
       "img":"/assets/img/aibar.webp"
     }
